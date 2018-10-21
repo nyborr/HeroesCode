@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            canvas {
+                border:1px solid #d3d3d3;
+                background-color: #f1f1f1;
+            }
+        </style>
+    </head>
+    <body onload="startGame()">
+        <div id="navbar">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="charSelect.html" class="nav-link">Character Select</a>
+                </li>
+                <li>
+                    <a href="http://marvel.com" class="nav-link">Marvel</a>
+                </li>
+                <li>
+                    <a href="mailto:robynlynnyates@gmail.com" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+
+        <br/>
+
+        <div style="text-align:center">
+            <button class="button" onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">moveUp();</button><br>
+            <button class="button" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">moveLeft();</button>
+            <button class="button"  onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">moveRight();</button><br>
+            <button class="button"  onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">moveDown();</button>
+        </div>
+        <div>
+            <button class="button" onclick="attackEnemy()">attackEnemy();</button>
+        </div>
+
+
+        <div>
+            <h2 id="charHeader"></h2>
+            <p>In order to win you must choose the functions (actions in code) that you wish for your character to make. Your character must move to their weapon or the civilian to save and then move to the enemy and attack. Your possible actions are listed below.</p>
+        </div>
+        <br/>
+
+
+
+        <div style="position: relative width: 600px; height: 5px;">    
+
+            <div style="position: fixed; bottom: 5px; left:5px">
+                Data provided by Marvel. © 2014 Marvel
+            </div>
+        </div>
+
+
+        <script src="jquery-3.3.1.js"></script>
+        <script src="play.js"></script>
+        <!-- Include JS File Here -->
+        <script src="playGame.js"></script>
+
+        <!-- Include CSS File Here -->
+        <link rel="stylesheet" href="style.css"/>
+    </body>
+</html>
