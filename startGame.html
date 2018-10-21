@@ -6,6 +6,9 @@
             canvas {
                 border:1px solid #d3d3d3;
                 background-color: #f1f1f1;
+                float: right;
+                margin-right: 300px;
+                margin-top:20px;
             }
         </style>
     </head>
@@ -27,23 +30,29 @@
             </ul>
         </div>
 
-        <br/>
-
-        <div style="text-align:center">
-            <button class="button" onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">moveUp();</button><br>
-            <button class="button" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">moveLeft();</button>
-            <button class="button"  onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">moveRight();</button><br>
-            <button class="button"  onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">moveDown();</button>
-        </div>
-        <div>
-            <button class="button" onclick="attackEnemy()">attackEnemy();</button>
-        </div>
-
 
         <div>
             <h2 id="charHeader"></h2>
-            <p>In order to win you must choose the functions (actions in code) that you wish for your character to make. Your character must move to their weapon or the civilian to save and then move to the enemy and attack. Your possible actions are listed below.</p>
+            <p>In order to win you must choose the functions (actions in code) that you wish for your character to make. Your character must move to the red spot to save a the civilian and then move to the yellow enemy and attack when on top. Your actions are listed below. Don't hit the black obstacles or you will lose! </p>
         </div>
+        <br/>
+
+        <br/>
+
+        <div style="text-align:center">
+            <button style="margin-top: 100px;margin-left: 300px" class="button" onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">moveUp();</button><br>
+            
+            <button style="margin-left:300px" class="button" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">moveLeft();</button>
+            
+            <button class="button"  onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">moveRight();</button><br>
+            
+            <button style="margin-left:300px" class="button"  onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">moveDown();</button>
+        </div>
+        <div>
+            <button style="margin-left:300px"  class="button" onclick="attackEnemy()">attackEnemy();</button>
+        </div>
+
+        <br/>
         <br/>
 
 

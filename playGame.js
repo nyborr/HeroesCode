@@ -14,25 +14,29 @@ function startGame() {
         myObstacle = new component(10, 400, "black", 530, 0); 
         objectToGet = new component(30, 30, "red", 100, 500);
         myEnemy = new component(30, 30, "yellow", 600, 10);
+
     } else if (character == "Hulk") {
         myGamePiece = new component(30, 30, "green", 30, 120);
-        myObstacle = new component(10, 400, "black", 530, 0);
+        myObstacle = new component(50, 400, "black", 200, 0);
         objectToGet = new component(30, 30, "red", 100, 500);
         myEnemy = new component(30, 30, "yellow", 600, 10);
-    } else if (character == "Spider-Man") {
-        myGamePiece = new component(30, 30, "red", 30, 120);
-        myObstacle = new component(10, 400, "black", 530, 0);
-        objectToGet = new component(30, 30, "orange", 100, 500);
+
+    } else if (character == "Iron Man") {
+        myGamePiece = new component(30, 30, "blue", 30, 120);
+        myObstacle = new component(400, 10, "black", 0, 230);
+        objectToGet = new component(30, 30, "red", 600, 400);
         myEnemy = new component(30, 30, "yellow", 600, 10);
+
     } else if (character == "Storm") {
         myGamePiece = new component(30, 30, "gray", 30, 120);
         myObstacle = new component(10, 400, "black", 530, 0);
         objectToGet = new component(30, 30, "red", 100, 500);
         myEnemy = new component(30, 30, "yellow", 600, 10);
+
     } else if (character == "Captain America") {
         myGamePiece = new component(30, 30, "blue", 30, 120);
         myObstacle = new component(10, 400, "black", 530, 0);
-        objectToGet = new component(30, 30, "orange", 100, 500);
+        objectToGet = new component(30, 30, "red", 100, 500);
         myEnemy = new component(30, 30, "yellow", 600, 10);
     }
 
