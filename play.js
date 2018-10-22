@@ -28,8 +28,8 @@ $(document).ready(function() {
 var charText;
 var photo;
 
-var PUBLIC_KEY = "a8ef3b47025668c4fdbeb0d36e135028";
-var PRIV_KEY = "5bd44bfb155259974dc0c26fef48c3e04ae1f1f4"
+var PUBLIC_KEY = "";
+var PRIV_KEY = ""
 var ts = new Date().getTime();
 
 
